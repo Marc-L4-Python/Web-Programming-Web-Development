@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style> /* Utilization of Cascading Style Sheet tag to stylize the website */
+            html, body { /* To remove the natural/auto margin of HTML */
+                margin: 0; 
+            }
+            
+            @font-face { /* Two unique and imported fonts not found in VS Code */
+                font-family: FuturaBT;
+                src: url(futura\ light\ bt.ttf); 
+            }
+
+            @font-face { 
+                font-family: LexendBlack;
+                src: url(Lexend-Black.ttf);
+            }
+
+            header { /* CSS for header section */
+                font-family: LexendBlack;
+                font-size: 7mm;
+                margin-top: 4.85mm;
+                margin-bottom: 4.85mm;
+                margin-left: 3.5mm;
+            }
+
+            h1.title { /* CSS for main title/recipe name shown at browser tab/browser title */
+                font-family: FuturaBT;
+                font-size: 12.5mm;
+                margin-top: 12.4mm;
+                margin-bottom: 12.4mm;
+            }
+
+            p.rdesc { /* CSS for recipe description */
+                font-family: FuturaBT;
+                font-size: 5mm;
+                margin-top: 7.5mm;
+                margin-left: 13.2mm;
+                margin-right: 13.2mm;
+                margin-bottom: 10mm;
+            }
+
+            .ingandcook { /* CSS code for the div containing and dividing 2 more divs/columns */
+                border: 1px hidden;
+                padding-top: 15px;
+                margin-left: 13.2mm;
+                
+                font-family: FuturaBT; 
+            }
+
+            .ing { /* CSS code for Ingredients section/column */
+                width: 26.2%;
+                float: left;
+                font-size: 5mm;
+            }
+
+            .cook { /* CSS code for Cooking Instructions section/column */
+                margin-left: 14.7mm;
+                margin-right: 13.2mm;
+                margin-bottom: 80mm;
+                font-size: 5mm;
+            }
+
+            .olmargin { /* Styling the ordered list - making it organized */
+                margin-top: 1.885%;
+                margin-left: 22.85%;
+                margin-right: 2%;
+            }
+
+            hr.hrleft { /* Float code for 2 horizontal lines in Ingredients section */
+                float: left;
+            }
+
+            h3 { /* Heading 3 CSS code - used in/for footer */
+                font-family: FuturaBT;
+                font-size: 5mm;
+                margin-top: 24mm;
+                margin-bottom: 24mm;
+                margin-left: 13.2mm;
+            }
+        </style>
+
+        <title>Filipino Chicken Adobo</title> <!-- Website title at the top bar; browser name/title -->
+	</head>
+
+
+
+
+    
+	<body>
+        <header> <!-- Header section at the top left of website -->
+            MARC DUMAGUIN
+        </header>
+        
+        <hr>
+
+        <h1 class = "title"> <!-- Recipe Name/Title -->
+            <center>
+                FILIPINO CHICKEN ADOBO
+            </center>
+        </h1>
+        
+        <img src = "Favorite Recipe - Chicken Adobo Background.jpg" 
+            alt = "Filipino Chicken Adobo Image"
+            width = "100%"> <!-- Image of recipe - Filipino Chicken Adobo -->
+
+
+        <p class = "rdesc"> <!-- Recipe description -->
+                One of the most popular and well-known Filipino dishes is Chicken Adobo. 
+                This meal is made in a unique way by stewing chicken in vinegar and soy sauce, 
+                not to be confused with Mexican Adobo. <br><br>
+                
+                The glaze of Filipino Chicken Adobo has a distinct soy flavor and is both sweet and savory with a bit of acidity. 
+                The peppercorns add tiny, delicate bursts of heat, while the garlic, onion, 
+                and bay leaves combine to produce a savory basis.
+        </p>
+        
+
+
+
+
+        <div class = "ingandcook"> <!-- Tag div used to contain 2 more div tags to/for separate columns -->
+            <div class = "ing"> <!-- First tag/first separate column for Ingredients section -->
+                <h2 style = "font-size: 8mm"> <!-- Heading 2 tag used for Ingredients -->
+                    INGREDIENTS <br>
+                </h2>
+
+                <h2 style = "font-size: 5mm">
+                    Chicken & Marinade
+                </h2>
+                    <ul> <!-- Unordered list containing the Ingredients, both: marinade and for cooking -->
+                        <li>750g / 1.5 lb chicken thigh fillets</li><br>
+                        <li>3 garlic cloves</li><br>
+                        <li>1/3 cup (85ml) soy sauce</li><br>
+                        <li>1/3 cup - 2 tbsp white vinegar</li><br>
+                        <li>4 bay leaves (fresh) or 3 dried</li>
+                    </ul>    
+            
+                    <hr class = "hrleft" width = "80.1%"> <!-- Horizontal rule for division of sections -->
+
+                <h2 style = "font-size: 5mm; margin-top: 13.8mm;"> <!-- Ingredients for cooking; not marinade -->
+                    Cooking Ingredients
+                </h2>
+                    <ul>
+                        <li>2 tbsp oil</li><br>
+                        <li>3 garlic cloves</li><br>
+                        <li>1 small brown onion</li><br>
+                        <li>1 1/2 cups (375 ml) water</li><br>
+                        <li>2 tbsp brown sugar</li><br>
+                        <li>1 tbsp whole black pepper</li>
+                    </ul>
+                
+                    <hr class = "hrleft" width = "80.1%" > <!-- Horizontal rule to indicate the end of Ingredients section -->
+            </div>
+        
+            <div class = "cook"> <!-- Second tag/second separate column for Cooking Instructions section -->
+                <h2 style = "font-size: 8mm;"> <!-- Heading 2 tag used for Preparing & Cooking Instructions -->
+                    PREPARING & COOKING INSTRUCTIONS
+                </h2>
+                    <ol class = "olmargin"> <!-- Ordered list presenting the steps and instructions to create and cook the recipe -->
+                        <div>
+                        <li>Combine Chicken & Marinade ingredients in a bowl. Marinate for at least 20 minutes, or up to overnight.</li> <br>
+                        <li>Heat 1 tbsp oil in a skillet over high heat. Remove chicken from marinade (reserve marinade) and place in the pan. 
+                            Sear both sides until browned - about 1 minute on each side. Do not cook the chicken all the way through.</li> <br>
+                        <li>Remove chicken skillet and set aside.</li> <br>
+                        <li>Heat the remaining oil in skillet. Add garlic and onion, cook 1 1/2 minutes.</li> <br>
+                        <li>Add the reserved marinade, water, sugar and black pepper. Bring it to a simmer then turn heat down to medium high. 
+                            Simmer 5 minutes.</li> <br>
+                        <li>Add chicken smooth side down. Simmer uncovered for 20 to 25 minutes (no need to stir), turning chicken at around 15 minutes, 
+                            until the sauce reduces down to a thick jam-like syrup.</li> <br>
+                        <li>If the sauce isn't thick enough, remove chicken onto a plate and let the sauce simmer by itself - it will thicken much quicker - 
+                            then return chicken to the skillet to coat in the glaze.</li> <br>
+                        <li>Coat chicken in glaze then serve over rice.</li>
+                        </div>
+                    </ol>
+            </div>
+        </div>
+
+        <hr> <!-- Horizontal rule serving as a separator; divide main content and footer -->
+
+        <footer> <!-- Footer containing Copyright and Contact E-mail -->
+            <h3> <!-- Heading 3 utilized for footer content(s) -->
+                &copy; Copyright 2024 <br>
+                mrsdumaguin.bathspa@gmail.com
+            </h3>
+        </footer>
+	</body>
+</html>

@@ -1,0 +1,446 @@
+html, body {
+    margin: 0;                      
+    background-color: #F8E9DF;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: NotoSerif;
+    src: url(NotoSerifJP-Regular.otf); /* Two imported fonts mainly used for design elements */
+}
+
+@font-face {
+    font-family: WomanR;
+    src: url(womanfontregular.otf);
+}
+
+.maincontainer { /* Main container - contains the main content for this chapter, the video, as well as the timestamps */
+    width: 47em; /* of the video in image format */
+    height: 46.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jpnvidcontainer { /* Container for the main video and its timestamps */
+    width: 47em;
+    height: 27.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0 hidden;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.japanvideo { /* The Video */
+    width: 47em;
+    height: 27.8em;
+    flex: 100%;
+    object-fit: cover;
+}
+
+.timestampcontainer { /* Container for the timestamps - consists of 3 timestamps using images */
+    width: 32em;
+    height: 1.2em;
+    position: absolute;
+    top: 82%;
+    transform: translate(23.5%, 0);
+    border-radius: 10px;
+    transition: 1s ease;
+    background-color: #D6C7BD;
+}
+
+.timestampcontainer:hover { /* Numerous hover effects for the timestamps and the images used - make it appear when hovered on */
+    height: 7.4em;
+}
+
+.timestampcontainer:hover .timestamp1 {
+    height: 6em;
+    opacity: 100%;
+}
+
+.timestampcontainer:hover .nihonimg1 {
+    opacity: 100%;
+}
+
+.timestampcontainer:hover .timestamp2 {
+    height: 6em;
+    opacity: 100%;
+}
+
+.timestampcontainer:hover .nihonimg2 {
+    opacity: 100%;
+}
+
+.timestampcontainer:hover .timestamp3 {
+    height: 6em;
+    opacity: 100%;
+}
+
+.timestampcontainer:hover .nihonimg3 {
+    opacity: 100%;
+}
+
+.timestamp1, .timestamp2, .timestamp3 { /* Using one (1) CSS code to style each timestamp container */
+    width: 10em;
+    height: 0em;
+    position: absolute;
+    border-radius: 5px;
+    transition: 1s ease;
+    overflow: hidden;
+    opacity: 1%;
+}
+
+.timestamp1 { /* Then, each timestamp container has its separate CSS code for its "x" and "y" positioning */
+    transform: translate(5%, 0.7em);
+}
+
+.nihonimg1 { /* And then, each image in each timestamp container also has its own CSS code */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12em;
+    height: 7.2em;
+    flex: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 50%;
+    transition: 1s ease;
+}
+
+.timestamp2 {
+    left: 50%;
+    transform: translate(-50%, 0.7em);
+}
+
+.nihonimg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12em;
+    height: 7.2em;
+    flex: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 50%;
+    transition: 1s ease;
+}
+
+.timestamp3 {
+    left: 50%;
+    transform: translate(55%, 0.7em);
+}
+
+.nihonimg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12em;
+    height: 7.2em;
+    flex: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 50%;
+    transition: 1s ease;
+}
+
+button { /* CSS Styling to make the button for the timestamp transparent */
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.expandcontainer { /* CSS code and hover effects for "dropdown" icon of the timestamp container */
+    position: absolute;
+    width: 32em;
+    height: 1.4em;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.expandmorebtn {
+    position: absolute;
+    left: 47.5%;
+    bottom: 0%;
+    transform: translate(0, -0.1mm);
+    opacity: 35%;
+    transition: 2.4s;
+}
+
+.timestampcontainer:hover .expandmorebtn {
+    opacity: 0%;
+    bottom: 6.4em;
+}
+
+.posters { /* Parent container for two (2) posters relating to the video */
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.leftpostercontainer { /* Left and right posters have their own containers, hover effects, and side arrow icon */
+    width: 1.55em;
+    height: 19.7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-26em, -50%);
+    transition: 1s ease;
+    clear: both;
+}
+
+.leftposter {
+    width: 1em;
+    height: 19.7em;
+    position: absolute;
+    right: 0;
+    border: 0 hidden;
+    border-radius: 17px;
+    overflow: hidden;
+    transition: 1s ease;
+    background-color: #D6C7BD;
+}
+
+.lposterarrowcontainer { /* Left poster arrow icon styling */
+    width: 1em;
+    height: 19.7em;
+    position: absolute;
+    right: 0;
+    border: 0 hidden;
+    border-radius: 17px;
+    overflow: hidden;
+    transition: 1s ease;
+    transform: rotate(90deg);
+}
+
+.lposterarrow {
+    position: absolute;
+    top: 50.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 35%;
+    transition: 3s ease;
+}
+
+.leftposter:hover .lposterarrow {
+    transform: translate(-50%, -10mm);
+}
+
+.leftposter:hover {
+    width: 12.8em;
+}
+
+.mtfuji { /* Left Poster */
+    width: 12.8em;
+    height: 19.7em;
+    position: absolute;
+    flex: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.leftposter:hover .mtfuji {
+    opacity: 100%;
+}
+
+.rightposter { /* Left and right posters have their own containers, hover effects, and side arrow icon */
+    width: 1em;
+    height: 19.7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(24.5em, -50%);
+    border: 0 hidden;
+    border-radius: 17px;
+    overflow: hidden;
+    transition: 1s ease;
+    background-color: #D6C7BD;
+}
+
+.rposterarrowcontainer { /* Right poster arrow icon styling */
+    width: 1em;
+    height: 19.7em;
+    position: absolute;
+    border: 0 hidden;
+    border-radius: 17px;
+    overflow: hidden;
+    transition: 1s ease;
+    transform: rotate(-90deg);
+}
+
+.rposterarrow {
+    position: absolute;
+    top: 50.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 35%;
+    transition: 3s ease;
+}
+
+.rightposter:hover .rposterarrow {
+    transform: translate(-50%, -10mm);
+}
+
+.rightposter:hover {
+    width: 12.8em;
+}
+
+.japanbeach { /* Right Poster */
+    width: 12.8em;
+    height: 19.7em;
+    position: absolute;
+    right: 0;
+    flex: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.rightposter:hover .japanbeach {
+    opacity: 100%;
+}
+
+.designelmnts { /* Container for the Graphic Design Elements */
+    position: absolute;
+    z-index: -2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13.2in;
+    height: 6.7in;
+    overflow: hidden;
+}
+
+.dsgntext1 {                    /* Twelve (12) Minimalistic Graphic Design Elements - Japan Theme */
+    position: absolute;         /* Mainly Typography and use of Two (2) Lines */
+    font-family: NotoSerif;
+    font-size: 3mm;
+    color: #614343;
+    top: 1.4em;
+    left: 1em;
+    letter-spacing: 1.5mm;
+    writing-mode: vertical-rl;
+}
+
+.dsgntext2 {
+    position: absolute;
+    font-family: NotoSerif;
+    font-size: 3mm;
+    color: #614343;
+    top: 1.4em;
+    left: 2.82em;
+    letter-spacing: 1.5mm;
+    writing-mode: vertical-rl;
+}
+
+.dsgntext3 {
+    position: absolute;
+    font-family: NotoSerif;
+    font-size: 3mm;
+    color: #614343;
+    top: 1.4em;
+    left: 4.64em;
+    letter-spacing: 1.5mm;
+    writing-mode: vertical-rl;
+}
+
+.dsgntext4 {
+    position: absolute;
+    font-family: NotoSerif;
+    font-size: 3mm;
+    color: #614343;
+    bottom: 0.8em;
+    right: 1em;
+    letter-spacing: 1mm;
+    writing-mode: vertical-rl;
+}
+
+.dsgntext5 {
+    position: absolute;
+    font-family: NotoSerif;
+    font-size: 3mm;
+    color: #614343;
+    bottom: 0.8em;
+    right: 2.82em;
+    letter-spacing: 1.5mm;
+    writing-mode: vertical-rl;
+}
+
+.dsgntext6 {
+    position: absolute;
+    font-family: NotoSerif;
+    font-size: 3mm;
+    color: #614343;
+    bottom: 0.8em;
+    right: 4.64em;
+    letter-spacing: 1.5mm;
+    writing-mode: vertical-rl;
+}
+
+.dsgntext7 {
+    position: absolute;
+    font-family: NotoSerif;
+    font-size: 8mm;
+    color: #614343;
+    bottom: 0.1em;
+    left: 0.42em;
+    letter-spacing: 1.5mm;
+}
+
+.dsgntext8 {
+    position: absolute;
+    font-family: WomanR;
+    font-size: 3mm;
+    color: #614343;
+    bottom: 4.5em;
+    left: 1.35em;
+    letter-spacing: 1.5mm;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+}
+
+.dsgnline1 {
+    position: absolute;
+    width: 1px;
+    height: 9em;
+    background-color: #614343;
+    bottom: 8.1em;
+    left: 1.21em;
+}
+
+.dsgntext9 {
+    position: absolute;
+    font-family: NotoSerif;
+    font-size: 8mm;
+    color: #614343;
+    right: 0.24em;
+    letter-spacing: 1.5mm;
+}
+
+.dsgntext10 {
+    position: absolute;
+    font-family: WomanR;
+    font-size: 3mm;
+    color: #614343;
+    top: 4.32em;
+    right: 1.35em;
+    letter-spacing: 1.65mm;
+    writing-mode: vertical-rl;
+}
+
+.dsgnline2 {
+    position: absolute;
+    width: 1px;
+    height: 9em;
+    background-color: #614343;
+    top: 7.45em;
+    right: 1.21em;
+}

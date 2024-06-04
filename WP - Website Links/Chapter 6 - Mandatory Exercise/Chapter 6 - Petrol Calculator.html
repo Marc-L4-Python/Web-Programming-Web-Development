@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" href = "Petrol Calculator.css" type = "text/css" /> <!-- CSS code styling link for Chapter 6, Petrol Calculator -->
+        <title>Petrol Calculator</title> <!-- Title of the Website -->
+	</head>
+
+	<body>
+        <div class = "maincontent"> <!-- Main Content Container -->
+            <div class = "leftctnt"> <!-- Left Content Container -->
+                <div class = "petrolclctr"> <!-- Petrol Calculator Container; contains all the elements of the calculator-->
+                    <div class ="options"> <!-- These are buttons that give the user options to calculate a Petrol or Diesel type of fuel -->
+                        <button class = "optionselected active" id = "petrolButton">Petrol</button> &nbsp;
+                        <button class = "option" id = "dieselButton">Diesel</button>
+                    </div>
+
+                    <div class = "calculator"> <!-- The Main Calculator -->
+                        <label for = "cost">Cost per Liter:</label><br> 
+                        <input type = "number" id = "cost" name = "cost" placeholder = "Enter cost per liter"
+                            value = "1.72" step = "0.03" min = "1.52"><br>
+                        <!-- Label and input field for Cost per Liter. Even though it has a fixed value stated in the assessment, gave the user -->
+                        <!-- options to increase the value. On the other hand, minimum value is the default value -->
+
+                        <label for = "liters">Liters Purchased:</label><br>
+                        <input type = "number" id = "liters" name = "liters" placeholder = "Enter number of liters"><br>
+                        <!-- Label and input field for the Liters Purchased. User enters a value they want and the field is required to have a value -->
+                        <!-- for the Petrol Calculator to work -->
+
+                        <label for = "totalCost">Total Cost:</label><br> <!-- Label and the field showcasing the total cost of the Petroleum fuel -->
+                        <div class = "input-group">
+                            <span class = "input-group-addon">$</span>
+                            <input type = "text" id = "totalCost" name = "totalCost" readonly><br>
+                        </div>
+
+                        <div id = "buttons"> <!-- Calculator buttons; "Calculate" to get the total cost and "Clear" to reset and clear the values/fields -->
+                            <button class = "calculate" onclick = "calculate()">Calculate</button> &ensp;
+                            <button class = "clear" onclick = "clearInputs()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "rightctnt"> <!-- Right Content Container - consists of the Image Container and Porsche Car Image itself-->
+                <div class = "imgcontainer">
+                    <img class = "porsche" src = "Porsche.jpg" alt = "">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("petrolButton").addEventListener("click", function() {
+                document.getElementById("petrolButton").classList.add("active");
+                document.getElementById("dieselButton").classList.remove("active");
+            }); /* Function to keep button highlighted when selected - Petrol Option */
+
+            document.getElementById("dieselButton").addEventListener("click", function() {
+                document.getElementById("dieselButton").classList.add("active");
+                document.getElementById("petrolButton").classList.remove("active");
+            }); /* Function to keep button highlighted when selected - Diesel Option */
+
+
+            /* JS Code for getting the values for the Petrol Option */
+            document.getElementById("petrolButton").addEventListener("click", function() {
+            document.getElementById("petrolButton").classList.add("selected");
+                document.getElementById("dieselButton").classList.remove("selected");
+                document.getElementById("cost").value = "1.72";
+                document.getElementById("cost").step = "0.03";
+                document.getElementById("cost").min = "1.72";
+            });
+      
+            /* JS Code for getting the values for the Diesel Option */
+            document.getElementById("dieselButton").addEventListener("click", function() {
+                document.getElementById("dieselButton").classList.add("selected");
+                document.getElementById("petrolButton").classList.remove("selected");
+                document.getElementById("cost").value = "1.92";
+                document.getElementById("cost").step = "0.04";
+                document.getElementById("cost").min = "1.92";
+            });
+      
+
+            /* JS Function of the whole calculator; This is where the whole calculating process occurs */
+            function calculate() {
+                var costInput = document.getElementById("cost");
+                var litersInput = document.getElementById("liters");
+                var totalCostInput = document.getElementById("totalCost");
+      
+                var costPerLiter = parseFloat(costInput.value);
+                var litersPurchased = parseFloat(litersInput.value);
+      
+                if (isNaN(costPerLiter) || costPerLiter <= 0) { /* If value in field is 0, then add's error and error color */
+                    costInput.classList.add("error");
+                    return;
+                } else {
+                    costInput.classList.remove("error");
+                }
+        
+                if (isNaN(litersPurchased) || litersPurchased <= 0) { /* If value in field is 0, then add's error and error color */
+                    litersInput.classList.add("error");
+                    return;
+                } else {
+                    litersInput.classList.remove("error");
+                }
+        
+                var totalCost = costPerLiter * litersPurchased; /* The main formula for calculating the Petrol Cost */
+                totalCostInput.value = totalCost.toFixed(2);
+            }   
+
+
+            function clearInputs() { /* Clear function to clear and reset values for Cost of Liters, Liters Purchased, and Total Cost */
+                var costInput = document.getElementById("cost");
+                var litersInput = document.getElementById("liters");
+                var totalCostInput = document.getElementById("totalCost");
+        
+                /* The below variables are for the fixed/default values of Petrol and Diesel options. */
+                /* If user is at Petrol option, it resets to 1.72. If user is at Diesel option, it resets to 1.92 */
+                if (document.getElementById("petrolButton").classList.contains("selected")) {
+                    costInput.value = "1.72";
+                    costInput.step = "0.03";
+                    costInput.min = "1.72";
+                } else {
+                    costInput.value = "1.92";
+                    costInput.step = "0.04";
+                    costInput.min = "1.92";
+                }
+                
+                litersInput.value = ""; /* This part of the "clearInputs" function clears the values for Liters Purchased and Total Cost */
+                totalCostInput.value = "";
+                costInput.classList.remove("error");
+                litersInput.classList.remove("error");
+            }
+        </script>
+	</body>
+</html>

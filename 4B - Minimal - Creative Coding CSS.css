@@ -1,0 +1,331 @@
+* ::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+html, body {
+    background-color: #FBFCFF;
+    font-family: ManropeT;
+    margin: 2.7em 1.7em;
+    color: #1C1C1D;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: ManropeT;
+    src: url(manrope-thin.otf);
+}
+
+@font-face {
+    font-family: ManropeR;
+    src: url(manrope-regular.otf);
+}
+
+header {
+    width: 100%;
+    height: 7em;
+    clear: both;
+}
+
+.pagename {
+    float: left;
+    font-family: ManropeR;
+    font-size: 2.75em;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.04em;
+    margin-left: 4.5em;
+}
+
+.othersubj {
+    float: right;
+    margin-top: 2.4em;
+}
+
+.othersubj a {
+    color: #1C1C1D;
+    display: block;
+    text-decoration: none;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    text-align: right;
+}
+
+main {
+    width: 100%;
+    height: 10em;
+}
+
+.toptexts {
+    margin-top: 5em;
+    margin-left: 10.95em;
+}
+
+table td {
+    box-sizing: border-box;
+    letter-spacing: 0.05em;
+    font-size: 0.7em;
+    padding: 0.5em 2em;
+    width: 20em;
+}
+
+.aboutstay {
+    position: absolute;
+}
+
+.heading {
+    position: relative;
+    float: left;
+    font-family: ManropeR;
+    font-size: 2.75em;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.04em;
+    margin-top: 2.15em;
+    margin-bottom: 2.15em;
+    margin-left: 4.5em;
+}
+
+.mparentcontainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+
+.mainimg {
+    position: relative;
+    width: 46.4em;
+    height: 25em;
+    margin: 2.4em 0;
+}
+
+img {
+    height: 100%;
+    position: absolute;
+}
+
+.mimgt {
+    position: absolute;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    line-height: 7em;
+    width: 24em;
+}
+
+.heading2 {
+    float: left;
+    font-family: ManropeR;
+    font-size: 2.75em;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.04em;
+    margin-top: 12.55em;
+    margin-left: -12.4em;
+}
+
+
+        /* Text Styling */
+        .tl {
+            left: -26.2em;
+            text-align: right;
+        }
+
+        .tr {
+            right: -13.2em;
+            text-align: left;
+        }
+
+
+        /* Width and Height Variance */
+        .h20 {
+            height: 20em;
+        }
+
+        .h44 {
+            height: 44em;
+        }
+
+        .h36 {
+            height: 36em;
+        }
+
+        .h30 {
+            height: 30em;
+        }
+
+        .h24 {
+            height: 24em;
+        }
+
+        .h23 {
+            height: 23em;
+        }
+
+        .h22 {
+            height: 22em;
+        }
+
+        /* Class Variables for Better Control of Position and Spacing */
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .b {
+            bottom: 0;
+        }
+
+        /* Left and Right Variables */
+        .l5 {
+            margin-left: 5%;
+        }
+
+        .l10 {
+            margin-left: 10%;
+        }
+
+        .l15 {
+            margin-left: 15%;
+        }
+
+        .l20 {
+            margin-left: 20%;
+        }
+        .l25 {
+            margin-left: 25%;
+        }
+        
+
+
+        .r5 {
+            margin-right: 5%;
+        }
+
+        .r10 {
+            margin-right: 10%;
+        }
+
+        .r15 {
+            margin-right: 15%;
+        }
+
+        .r20 {
+            margin-right: 20%;
+        }
+
+        .r25 {
+            margin-right: 25%;
+        }
+
+        /* Left and Right */
+        .ll0 {
+            left: 0;
+        }
+
+        .ll3 {
+            left: 3em;
+        }
+
+        .ll5 {
+            left: 5em;
+        }
+
+        .ll7 {
+            left: 7em;
+        }
+
+        .ll9 {
+            left: 9em;
+        }
+
+        .ll11 {
+            left: 11em;
+        }
+
+        
+        .rr0 {
+            right: 0;
+        }
+
+        .rr3 {
+            right: 3em;
+        }
+
+        .rr5 {
+            right: 5em;
+        }
+
+        .rr7 {
+            right: 7em;
+        }
+
+        .rr9 {
+            right: 9em;
+        }
+
+        .rr11 {
+            right: 11em;
+        }
+
+
+
+
+
+.end {
+    /* position: absolute; */
+    margin-top: 291cm;
+    width: 100%;
+    height: 10em;
+}
+
+.endtext {
+    float: left;
+    font-family: ManropeR;
+    font-size: 2.75em;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.04em;
+    margin-left: 4.5em;
+    margin-top: 1em;
+}
+
+.endlinks {
+    position: relative;
+}
+
+.backtotop {
+    text-decoration: none;
+    color: #1C1C1D;
+    position: absolute;
+    left: 73%;
+    top: 6em;
+
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    line-height: 2.5em;
+    text-align: left;
+}
+
+.nextdms {
+    text-decoration: none;
+    color: #1C1C1D;
+    position: absolute;
+    right: 0;
+    top: 3.4em;
+
+    /* display: block; */
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    line-height: 2.5em;
+    text-align: right;
+}
+
+.totop {
+    position: absolute;
+    top: 0;
+    color: #FBFCFF;
+}

@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    font-family: Futura, sans-serif;
+    background-color: #F6F6F6;
+}
+
+@font-face {
+    font-family: Futura;                /* Futura Font - Imported */
+    src: url(futura\ light\ bt.ttf);
+}
+
+.maincontent { /* Main Content Container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33.5cm;
+    height: 16cm;
+    clear: both;
+}
+
+.leftctnt { /* Left Content Container */
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.rightctnt { /* Right Content Container */
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.petrolclctr { /* Parent Container for the Petrol Calculator - includes all the different elements of the calculator */
+    position: absolute;
+    top: 50%;
+    left: 31.8%;
+    transform: translate(-50%, -50%);
+    width: 9cm;
+    height: 9.63cm;
+    border-radius: 10px;
+    box-shadow: 0 1.1mm 2rem -0.5mm hsla(0, 0%, 0%, 0.25);
+}
+
+.options { /* Container for the fuel option buttons - Petrol & Diesel */
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    width: 18em;
+    height: 3em;
+}
+
+.optionselected, .option { /* Styling for the Petrol & Diesel option buttons */
+    background-color: #F4F4F4;
+    background-repeat: no-repeat;
+    font-size: 6mm;
+    border: 1px hidden;
+    border-radius: 6.5px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 2mm 8mm;
+    transition: 0.3s ease;
+}
+
+.optionselected:hover, .option:hover { /* Hover efffect for both option buttons */
+    background-color: #D5D5D5;
+}
+
+.active { /* CSS class for which option between Petrol or Diesel has been picked; to let user know which option is active */
+    background-color: #DCDCDC;
+}
+
+.calculator { /* The main elements of the calculator; the parent container for the fields, labels, and such */
+    position: absolute;
+    top: 19.4%;
+    left: 50.4%;
+    transform: translate(-50%, 0);
+    width: 17.2em;
+    height: 20em;
+}
+
+label { 
+    font-size: 5.2mm;
+    margin-left: 1.7mm;
+}
+
+input { /* Input field styling */
+    margin-top: 0.9mm;
+    margin-bottom: 2.8mm;
+    margin-left: 1mm;
+    width: 16em;
+    height: 2em;
+    font-size: 4.3mm;
+    border-radius: 6px;
+    border: 1px solid #D1D1D1;
+}
+
+input:focus { /* Active/Focused field styling; to let the user know which field they are on */
+    outline: none;
+    border-color: #777777;
+    border-radius: 6px;
+}
+
+.error { /* Error class when a required field is empty */
+    border-color: #7F3D3D !important;
+}
+
+#liters {
+    margin-bottom: 7.4mm;
+}
+
+.input-group-addon {
+    position: absolute;
+    font-size: 5mm;
+    left: -3.1mm;
+    transform: translate(0, 2.4mm);
+}
+
+#buttons { /* Container for the Calculate and Clear buttons at the bottom of the Petrol Calculator */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50.45%, 2.5%);
+    width: 91.53%;
+    height: 9mm;
+}
+
+.calculate, .clear { /* Calculate button and Clear button styling */
+    font-size: 5.2mm;
+    padding: 1.7mm 7mm;
+
+    background-color: #E0E0E0;
+    background-repeat: no-repeat;
+    border: 1px hidden;
+    border-radius: 6.5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.calculate:hover, .clear:hover { /* Hover effect for Calculate and Clear buttons */
+    background-color: #D0D0D0;
+}
+
+.imgcontainer { /* Image Container - inside the right-side container of the website */
+    margin-top: 41%;
+    margin-left: 45%;
+    transform: translate(-50%, -50%);
+    width: 25em;
+    height: 32em;
+}
+
+.porsche { /* A Porsche Car Image */
+    width: 25em;
+    height: 32em;
+    flex: 100%;
+    object-fit: cover;
+}

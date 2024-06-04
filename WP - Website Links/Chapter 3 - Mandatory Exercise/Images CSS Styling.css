@@ -1,0 +1,667 @@
+html, body { /* HTML and Body CSS styling to remove margin and padding. As well as setting up the background color */
+    margin: 0;
+    padding: 0;
+    background-color: #EAE3CD;
+}
+
+@font-face { 
+    font-family: SusIntlUL;
+    src: url(SuisseUltraLight.otf); /* Two (2) beautiful imported fonts that fit the website's theme and aesthetics */
+}
+
+@font-face {
+    font-family: Glamour;
+    src: url(GlamourLuxury-Round.ttf);
+}
+
+.topnav { /* Top Navigation Bar styling */
+    font-family: SusIntlUL;
+    font-size: 4.1mm;
+    font-weight: bold;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    transform: translate(9.5%, 0%);
+    z-index: 1;
+}
+
+.topnav a{ /* MORE top Navigation Bar styling */
+    float: left;
+    display: block;
+    margin-left: 33.5mm;
+    margin-right: 33.5mm;
+    padding: 5mm 0mm;
+    color: #111111;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.topnav a:hover { /* Top Navigation Bar styling when hovered */
+    color: #668768;
+    transform: scale(1.15);
+    transition: 0.25s;
+}
+
+.section1 { /* First Section spacing setup */
+    padding-left: 3.1cm;
+    padding-right: 3.1cm;
+    background-color: #EAE3CD;
+    height: 890px;
+}
+
+.sgmt1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sgmt1text { /* First Section text container position set up */
+    float: left;
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+
+.sgmttitle { /* Main Title of Webpage - CSS Properties */
+    font-family: Glamour;
+    font-size: 6.7cm;
+    color: #2E2429;
+    letter-spacing: 3.25mm;
+    margin-top: 3.55cm;
+}
+
+.sgmtslogan { /* Main Slogan of Webpage - CSS Properties */
+    font-family: Glamour;
+    font-size: 7mm;
+    letter-spacing: 0.4mm;
+    color: #5A3931;
+    margin-top: -14mm;
+    margin-left: 1mm;
+}
+
+.vinylctnr { /* Container of First Image */
+    position: relative;
+    display: inline-block;
+    border-radius: 19px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    width: 16.5cm;
+    height: 11cm;
+    margin-top: 6.7rem;
+    margin-left: 3.2rem;
+}
+
+.vinylimg { /* First Image styling */
+    width: 16.5cm;
+    height: 11cm;
+    aspect-ratio: 5/3;
+    flex: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    transition: 0.5s;
+}
+
+.vinylimg:hover { /* First Image hover effect and image filters*/
+    width: 16.5cm;
+    height: 11cm;
+    aspect-ratio: 5/3;
+    flex: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+    opacity: 70%;
+    filter: blur(4px);
+    transition: 0.5s;
+}
+
+.vinylctnr:hover .text { /* Text hover effect and text CSS styling for first image (below) */
+    transition: 0.5s ease;
+    opacity: 100%;
+}
+
+.text {
+    background-color: #E1DAC1;
+    color: #2C4132;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0%;
+    transition: 0.5s ease;
+}
+
+.section2 { /* Second section spacing setup */
+    padding-left: 3.1cm;
+    padding-right: 3.1cm;
+    background-color: #D9D2BC;
+    height: 890px;
+}
+
+.sgmt2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sgmt2text { /* Second Section text container position set up */
+    float: right;
+    margin-top: 8.75mm;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sgmt2minititle { /* Multiple (3) headings' CSS properties of second section */
+    font-family: Glamour;
+    font-size: 10mm;
+    color: #2E2429;
+    letter-spacing: 0.5mm;
+    margin-top: 3cm;
+    margin-left: 1.7mm;
+}
+
+.sgmt2title1 { 
+    font-family: Glamour;
+    font-size: 5cm;
+    color: #2E2429;
+    letter-spacing: 3.25mm;
+    margin-top: -1.05cm;
+}
+
+.sgmt2title2 {
+    font-family: Glamour;
+    font-size: 5cm;
+    color: #2E2429;
+    letter-spacing: 3.25mm;
+    margin-top: -2.1cm;
+}
+
+.sgmt2slogan { /* Simple slogan's CSS properties of second section */
+    font-family: Glamour;
+    font-size: 7mm;
+    letter-spacing: 0.4mm;
+    color: #5A3931;
+    margin-top: -10.2mm;
+    margin-left: 1.72mm;
+}
+
+.pianoctnr { /* Container of Second Image */
+    position: relative;
+    display: inline-block;
+    border-radius: 19px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    width: 16.5cm;
+    height: 11cm;
+    margin-top: 7.7rem;
+}
+
+.pianoimg { /* Second Image styling */
+    width: 16.5cm;
+    height: 11cm;
+    aspect-ratio: 5/3;
+    flex: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    transition: 0.5s;
+}
+
+.pianoimg:hover { /* Second Image hover effect and image filters*/
+    width: 16.5cm;
+    height: 11cm;
+    aspect-ratio: 5/3;
+    flex: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+    opacity: 70%;
+    filter: grayscale(50%) brightness(70%);
+    transition: 0.5s;
+}
+
+.pianoctnr:hover .text2 { /* Text hover effect and text CSS styling for second image (below) */
+    transition: 0.5s ease;
+    opacity: 100%;
+}
+
+.text2 {
+    background-color: #E1DAC1;
+    color: #2C4132;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0%;
+    transition: 0.5s ease;
+}
+
+.section3 { /* Third section spacing setup */
+    padding-left: 3.1cm;
+    padding-right: 3.1cm;
+    background-color: #C8C1AB;
+    height: 890px;
+}
+
+.sgmt3 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sgmt3text { /* Third Section text container position set up */
+    float: left;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sgmt3title { /* Heading CSS properties of third section */
+    font-family: Glamour;
+    font-size: 5cm;
+    color: #2E2429;
+    letter-spacing: 0.2mm;
+    margin-top: 4cm;
+}
+
+.sgmt3slogan { /* Simple slogan's CSS properties of third section */
+    font-family: Glamour;
+    font-size: 7mm;
+    letter-spacing: 0.4mm;
+    color: #5A3931;
+    margin-left: 3.5mm;
+}
+
+.guitarctnr { /* Container of Third Image */
+    position: relative;
+    display: inline-block;
+    border-radius: 19px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    width: 16.5cm;
+    height: 11cm;
+    margin-top: -9.5cm;
+    margin-left: 17.15cm;
+}
+
+.guitarimg { /* Third Image styling */
+    width: 16.5cm;
+    height: 11cm;
+    aspect-ratio: 5/3;
+    flex: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    transition: 0.5s;
+}
+
+.guitarimg:hover { /* Third Image hover effect and image filters */
+    width: 16.5cm;
+    height: 11cm;
+    aspect-ratio: 5/3;
+    flex: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+    opacity: 70%;
+    filter: sepia(24%) blur(1.7px);
+    transform: scale(1.024);
+    transition: 0.5s;
+}
+
+.guitarctnr:hover .text3 { /* Text hover effect and text CSS styling for third image (below) */
+    transition: 0.5s ease;
+    opacity: 100%;
+}
+
+.text3 {
+    background-color: #E1DAC1;
+    color: #2C4132;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0%;
+    transition: 0.5s ease;
+}
+
+.imgpadding { /* Image extra spacing */
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sgmt1dsgn1 { /* CSS Elements for FIVE (5) divs with minimalistic and aesthetic graphic designing in FIRST SECTION */
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #5A3931;
+    margin-top: 2.7cm;
+    margin-left: 1.6mm;
+}
+
+.sgmt1dsgn2 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #9B947B;
+    margin-top: -4.2mm;
+    margin-left: 7.6mm;
+}
+
+.sgmt1dsgn3 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #D2CBB2;
+    margin-top: -4.2mm;
+    margin-left: 13.6mm;
+}
+
+.sgmt1dsgn4 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #577057;
+    margin-top: -4.2mm;
+    margin-left: 19.6mm;
+}
+
+.sgmt1dsgn5 {
+    font-family: SusIntlUL;
+    font-size: 3mm;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 2.5cm;
+    margin-left: 26.1cm;
+}
+
+.sgmt2dsgncontainer { /* Container for the Second Section's minimalistic and aesthetic designs */
+    position: absolute;
+    width: 83.55%;
+    height: 890px;
+}
+
+.sgmt2dsgn1 { /* CSS Elements for TWELVE (12) divs with minimalistic and aesthetic graphic designing in SECOND SECTION */
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #453838;
+    position: absolute;
+    top: 7em;
+    left: 77.87rem;
+}
+
+.sgmt2dsgn2 {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #C4A18C;
+    position: absolute;
+    top: 8.3em;
+    left: 77.87rem;
+}
+
+.sgmt2dsgn3 {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #292C3A;
+    position: absolute;
+    top: 9.6em;
+    left: 77.87rem;
+}
+
+.sgmt2dsgn4 {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #788088;
+    position: absolute;
+    top: 10.9em;
+    left: 77.87rem;
+}
+
+.sgmt2dsgn5 {
+    font-family: SusIntlUL;
+    font-size: 3.5mm;
+    font-weight: bold;
+    letter-spacing: 0.8mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 8.6em;
+    left: 76.45rem;
+    writing-mode: vertical-rl;
+}
+
+.sgmt2dsgn6 {
+    font-family: SusIntlUL;
+    font-size: 3.5mm;
+    font-weight: bold;
+    letter-spacing: 0.8mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 48em;
+    left: 77.835rem;
+    writing-mode: vertical-rl;
+}
+
+.sgmt2dsgn7 {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #453838;
+    position: absolute;
+    top: 43.5em;
+    left: 0.25rem;
+}
+
+.sgmt2dsgn8 {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #C4A18C;
+    position: absolute;
+    top: 43.5em;
+    left: 1.55rem;
+}
+
+.sgmt2dsgn9 {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #292C3A;
+    position: absolute;
+    top: 43.5em;
+    left: 2.85rem;
+}
+
+.sgmt2dsgn10 {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #788088;
+    position: absolute;
+    top: 43.5em;
+    left: 4.15rem;
+}
+
+.sgmt2dsgn11 {
+    font-family: SusIntlUL;
+    font-size: 3.5mm;
+    font-weight: bold;
+    letter-spacing: 0.5mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 8.8em;
+    left: 0.25rem;
+}
+
+.sgmt2dsgn12 {
+    font-family: SusIntlUL;
+    font-size: 3.5mm;
+    font-weight: bold;
+    letter-spacing: 0.5mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 43.4rem;
+    left: 5.45rem;
+}
+
+.sgmt3dsgncontainer { /* Container for the Third Section's minimalistic and aesthetic designs */
+    position: absolute;
+    width: 83.55%;
+    height: 890px;
+}
+
+.sgmt3dsgn1 { /* CSS Elements for FOURTEEN (14) divs with minimalistic and aesthetic graphic designing in THIRD SECTION */
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #6C4D39;
+    position: absolute;
+    top: 37.3em;
+    left: 1em;
+}
+
+.sgmt3dsgn2 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #AC8A65;
+    position: absolute;
+    top: 37.3em;
+    left: 2.4em;
+}
+
+.sgmt3dsgn3 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #C7AB6E;
+    position: absolute;
+    top: 37.3em;
+    left: 3.8em;
+}
+
+.sgmt3dsgn4 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #EAD7C1;
+    position: absolute;
+    top: 37.3em;
+    left: 5.2em;
+}
+
+.sgmt3dsgn5 {
+    font-family: SusIntlUL;
+    font-size: 3.1mm;
+    font-weight: bold;
+    letter-spacing: 0.5mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 51.1em;
+    left: 10em;
+}
+
+.sgmt3dsgn6 {
+    width: 70px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 37.78em;
+    left: 12em;
+}
+
+.sgmt3dsgn7 {
+    font-family: SusIntlUL;
+    font-size: 3.1mm;
+    font-weight: bold;
+    letter-spacing: 0.5mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 51.1em;
+    left: 23.3em;
+}
+
+.sgmt3dsgn8 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #6C4D39;
+    position: absolute;
+    top: 10.5em;
+    left: 78em;
+}
+
+.sgmt3dsgn9 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #AC8A65;
+    position: absolute;
+    top: 10.5em;
+    left: 76.6em;
+}
+
+.sgmt3dsgn10 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #C7AB6E;
+    position: absolute;
+    top: 10.5em;
+    left: 75.2em;
+}
+
+.sgmt3dsgn11 {
+    width: 15.5px;
+    height: 15.5px;
+    background-color: #EAD7C1;
+    position: absolute;
+    top: 10.5em;
+    left: 73.8em;
+}
+
+.sgmt3dsgn12 {
+    font-family: SusIntlUL;
+    font-size: 3.1mm;
+    font-weight: bold;
+    letter-spacing: 0.5mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 14.38em;
+    left: 81.12em;
+}
+
+.sgmt3dsgn13 {
+    width: 70px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 10.95em;
+    left: 63.95em;
+}
+
+.sgmt3dsgn14 {
+    font-family: SusIntlUL;
+    font-size: 3.1mm;
+    font-weight: bold;
+    letter-spacing: 0.5mm;
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 14.38em;
+    left: 94.25em;
+}
+
+footer { /* CSS Styling for footer and footer contents of Vybe Website */
+    padding: 2.4cm 3.1cm;
+    font-family: SusIntlUL;
+    font-size: 3.3mm;
+    font-weight: bold;
+    letter-spacing: 0.4mm;
+    background-color: #B7B09A;
+}
+
+.guidetext { /* Guide text to "hover over image" w/ minimalistic CSS styling */
+    font-family: SusIntlUL;
+    font-size: 3mm;
+    font-weight: bold;
+    color: #2E2429;
+    position: absolute;
+    letter-spacing: 0.09mm;
+    top: 5.4cm;
+    left: 37.07cm;
+    writing-mode: vertical-rl;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+        <meta name = "google" content = "notranslate" /> <!-- Functions as a non-translator since website has Japanese words for design -->
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "Video CSS.css" type = "text/css" /> <!-- CSS for the Video Website -->
+		<title>Nippon</title> <!-- Website Title - Nippon, can also be Nihon, which is Japan in Japanese -->
+	</head>
+
+	<body>
+        <div class = "maincontainer"> <!-- Main Parent Container for the video and three (3) timestamps -->
+            <div class = "jpnvidcontainer"> <!-- The container of the main video -->
+                <video class = "japanvideo" id = "japanvideo" controls loop>
+                    <source src = "Japan - Clip Compilation.mp4" type = "video/mp4"> <!-- A video of Japan's scenery, nature, city, and overall beauty -->
+                </video>
+            </div>
+
+            <div class = "timestampcontainer"> <!-- Parent container which has three (3) timestamps -->
+                <div class = "expandcontainer"> <!-- Drop-down Arrow Icon -->
+                    <img class = "expandmorebtn" src = "Expand More.png" alt = "">
+                </div>
+
+                <div class = "timestamp1"> 
+                    <button onclick = "navigateToTime1(5.5)"> <!-- Using a button with a JS function to bring user 5 sec of the video -->
+                        <img class = "nihonimg1" src = "Nihon IMG 1.png" alt="A picture of the Tokyo Tower"> <!-- Image relating to the 5 sec on the video -->
+                    </button>
+                </div>
+
+                <div class = "timestamp2">
+                    <button onclick = "navigateToTime2(103)"> <!-- Using a button with a JS function to bring user 1 min and 43 sec of the video -->
+                        <img class = "nihonimg2" src = "Nihon IMG 2.png" alt="A picture of a Sakura"> <!-- Image relating to the 1min and 43 sec sec on the video -->
+                    </button>
+                </div>
+
+                <div class = "timestamp3">
+                    <button onclick = "navigateToTime3(118.5)"> <!-- Using a button with a JS function to bring user 1 min and 58 sec of the video -->
+                        <img class = "nihonimg3" src = "Nihon IMG 3.png" alt="A picture of a Japanese Shrine"> <!-- Image relating to the 1min and 58 sec on the video -->
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class = "posters"> <!-- Main Parent Container which contains two (2) posters relating to the video, as per the assessment -->
+            <div class = "leftpostercontainer"> <!-- Left poster having another parent container to set it to the right of it, 
+                                                     and let it open left side when hovered -->
+                <div class = "leftposter"> <!-- Left Poster Container for the image and side-arrow icon -->
+                    <div class = "lposterarrowcontainer">
+                        <img class = "lposterarrow" src = "Expand More.png" alt = "">
+                    </div>
+
+                    <img class = "mtfuji" src = "Japan, Mt. Fuji - Graphic Design - BlueMarkVoices.png" alt = "A graphic design of Mt. Fuji."> 
+                </div> <!-- Left Poster is Mt. Fuji -->
+            </div>
+
+            <div class = "rightposter"> <!-- Right Poster Container for the image and side-arrow icon -->
+                <div class = "rposterarrowcontainer">
+                    <img class = "rposterarrow" src = "Expand More.png" alt = "">
+                </div>
+
+                <img class = "japanbeach" src = "Japan Beach - Graphic Design - Photo Exhibition - July, 2016.jpg" alt = "A graphic design of one of Japan's Beaches.">
+            </div> <!-- Right Poster is a Beach in Japan -->
+        </div>
+
+        <div class = "designelmnts"> <!-- A container which consists of the minimalistic graphic design elements -->
+            <div class = "dsgntext1">日本の文化と伝統</div> <!-- Graphic Design Elements - Typography and Lines -->
+            <div class = "dsgntext2">日本の美しさ</div>
+            <div class = "dsgntext3">日出ずる国</div>
+
+            <div class = "dsgntext4">人生は美しい、探してみれば</div>
+            <div class = "dsgntext5">明けない夜はない</div>
+            <div class = "dsgntext6">七転び八起き</div>
+
+            <div class = "dsgntext7">東京</div>
+            <div class = "dsgntext8">TOKYO</div>
+            <div class = "dsgnline1"></div>
+            
+            <div class = "dsgntext9">日本</div>
+            <div class = "dsgntext10">JAPAN</div>
+            <div class = "dsgnline2"></div>
+        </div>
+
+        <script> /* JavaScript for the three (3) timestamps of the video */
+            function navigateToTime1(seconds) {
+                var video = document.getElementById("japanvideo"); /* First function navigates user 5 sec into video */
+                    video.currentTime = 5.5;
+            }
+
+            function navigateToTime2(seconds) {
+                var video = document.getElementById("japanvideo"); /* Second function navigates user 1 min and 43 sec into video */
+                    video.currentTime = 103;
+            }
+
+            function navigateToTime3(seconds) {
+                var video = document.getElementById("japanvideo"); /* Third function navigates user 1 min and 58 sec into video */
+                    video.currentTime = 118.5;
+            }
+        </script>
+	</body>
+</html>

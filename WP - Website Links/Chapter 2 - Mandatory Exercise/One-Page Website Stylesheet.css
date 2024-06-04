@@ -1,0 +1,456 @@
+html, body { /* CSS properties to clear the website's margin and set background color to black */
+    margin: 0px;
+    background-color: black;
+}
+
+@font-face { /* Four (4) different fonts imported and linked */
+    font-family: LinoDPro;
+    src: url(DidotLTPro-Roman.ttf);
+}
+
+@font-face {
+    font-family: Brioche;
+    src: url(Brioche\ DEMO.otf);
+}
+
+@font-face {
+    font-family: GTSectra;
+    src: url(GT-Sectra-Display-Light-Trial.otf);
+}
+
+@font-face {
+    font-family: GTUltraR;
+    src: url(GT-Ultra-Fine-Regular-Trial.otf);
+}
+
+.hdrm { /* Header Margin */
+    margin-top: 73.4mm;
+    margin-bottom: 25em;
+}
+
+.headtitle1 { /* Two CSS classes that styles the home page's title - Interstellar */
+    font-family: Brioche;
+    font-size: 32mm;
+    letter-spacing: 45px;
+    -webkit-text-stroke-width: 0.23px;
+    -webkit-text-stroke-color:#D6CFB6;
+    text-align: center;
+    margin-left: 10.35mm;
+}
+
+.headtitle2 {
+    font-family: LinoDPro;
+    font-size: 20mm;
+    color: #FFFFF2;
+    letter-spacing: 22px;
+    text-align: center;
+    margin-top: -32.48mm;
+    margin-left: 4.5mm;
+}   
+
+.plotcontainer { /* Container that has the Plot contents */
+    margin-bottom: 19cm;
+}
+
+.plottitle { /* Plot title CSS styling */
+    font-family: GTSectra;
+    font-size: 3.6em;
+    color: #FFF8DF;
+    letter-spacing: 12px;
+    margin-left: 5cm;
+}
+
+.plotctnt {
+    margin-left: 5cm;
+    margin-right: 5cm;
+}
+
+.plotside { /* CSS elements for the Plot display text on the side */
+    font-family: GTUltraR;
+    font-size: 27mm;
+    letter-spacing: 3.22mm;
+    -webkit-text-stroke-width: 2.7px;
+    -webkit-text-stroke-color:#393731;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    margin-top: 11.2mm;
+    margin-left: 8.8mm;
+}
+
+.plotfloat1, .plotfloat2 { /* Plot content divided into 2 columns, stylized as well */
+    font-family: LinoDPro;
+    font-size: 5.5mm;
+    color: #FFF8DF;
+    line-height: 7.8mm;
+    float: left;
+    width: 48%;
+}
+
+.plotfloat1 { /* Extra adjustment/alignment for the columns */
+    margin-right: 12.08mm;
+}
+
+.keyinfocontainer { /* Container that has the Key Information contents */
+    margin-top: 15cm;
+    margin-bottom: 16cm;
+}
+
+.kinfotitle {
+    font-family: GTSectra;
+    font-size: 3.6em;
+    color: #FFF8DF;
+    letter-spacing: 12px;
+    text-align: right;
+    margin-right: 5cm;
+}
+
+.keyside { /* CSS elements for the Key display text on the side */
+    font-family: GTUltraR;
+    font-size: 20mm;
+    color: #393731;
+    letter-spacing: 3.22mm;
+    position: absolute;
+    margin-left: 35.3cm;
+}
+
+.infoside { /* CSS elements for the Information display text on the side */
+    font-family: GTUltraR;
+    font-size: 17.5mm;
+    letter-spacing: 1.7mm;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#393731;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    margin-top: 1.975cm;
+    margin-left: 34.975cm;
+}
+
+.ki-table { /* Margins for the tables used in Key Information */
+    margin-top: 7.2mm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+}
+
+.kitable1, .kitable2, .kitable3 { /* Styling the 3 tables used in Key Information */
+    font-family: LinoDPro;
+    font-size: 5mm;
+    color: #FFF8DF;
+    float: left;
+    width: 32%;
+}
+
+.kitable1 {/* 12.08mm */
+    margin-right: 3.01mm;
+}
+
+.kitable2 {
+    margin-right: 9.07mm;
+}
+
+.castcontainer { /* Container that has the Cast contents */
+    margin-top: 15cm;
+    margin-bottom: 18cm;
+}
+
+.casttitle {
+    font-family: GTSectra;
+    font-size: 3.6em;
+    color: #FFF8DF;
+    letter-spacing: 12px;
+    text-align: center;
+}
+
+.castside1 { /* CSS elements for the Cast display text on the left side */
+    font-family: GTUltraR;
+    font-size: 26mm;
+    letter-spacing: 7.95mm;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#393731;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    margin-left: 6cm;
+}
+
+.castside2 { /* CSS elements for the Cast display text on the right side */
+    font-family: GTUltraR;
+    font-size: 30mm;
+    color: #393731;
+    letter-spacing: 14.45mm;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    margin-left: 30.785cm;
+}
+
+.castlistctnt { 
+    margin-left: 24.8em;
+}
+
+.castlist1, .castlist2 {
+    font-family: LinoDPro;
+    font-size: 7mm;
+    color: #FFF8DF;
+    line-height: 10mm;
+    list-style-type: none;
+    text-align: center;
+    float: left;
+}
+
+.castlist1 {
+    margin-right: 7mm;
+}
+
+.ctcontainer { /* Container that has the Creative Team contents */
+    margin-top: 17cm;
+    margin-bottom: 18cm;
+}
+
+.cttitle {
+    font-family: GTSectra;
+    font-size: 3.6em;
+    color: #FFF8DF;
+    letter-spacing: 12px;
+    text-align: right;
+    margin-right: 5cm;
+}
+
+.crtvside { /* CSS elements for the Creative background text display text on the side */
+    font-family: GTUltraR;
+    font-size: 21mm;
+    letter-spacing: 1.7mm;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#393731;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    margin-top: 5.8mm;
+    margin-left: 36.35cm;
+}
+
+.tmside { /* CSS elements for the Team background display text on the side */
+    font-family: GTUltraR;
+    font-size: 12.5mm;
+    color: #514F49;
+    letter-spacing: 1.7mm;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    margin-top: 6.98cm;
+    margin-left: 36.85cm;
+}
+
+.ctctnt {
+    margin-top: 5.5mm;
+    margin-left: 4cm;
+    margin-right: 5cm;
+}
+
+.ctvlist1, .ctvlist2 {
+    font-family: LinoDPro;
+    font-size: 3.75mm;
+    color: #FFF8DF;
+    list-style-type: none;
+    line-height: 16.8mm;
+    float: left;
+}
+
+.ctvlist1 {
+    margin-right: 5mm;
+}
+
+.cteamb {
+    font-size: 7mm;
+}
+
+.charcontainer { /* Container that has the Characters contents */
+    margin-top: 17cm;
+    margin-bottom: 21cm;
+}
+
+.chartitle {
+    font-family: GTSectra;
+    font-size: 3.6em;
+    color: #FFF8DF;
+    letter-spacing: 12px;
+    margin-left: 5cm;
+}
+
+.charside1 { /* CSS elements for the Characters display text on the side */
+    font-family: GTUltraR;
+    font-size: 19mm;
+    color: #514F49;
+    letter-spacing: 4.5mm;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    -webkit-transform: rotate(180deg);
+    position: absolute;
+    margin-left: 15.4mm;
+}
+
+.charlttr1 { /* One of the Characters' display text vowels, letter E - separate styling */
+    font-family: GTUltraR;
+    font-size: 3.17em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#393731;
+    -webkit-transform: rotate(180deg);
+    position: absolute;
+    margin-top: 3.22cm;
+    margin-left: 1.75cm;
+}
+
+.charlttr2 { /* One of the Characters' display text vowels, first letter A - separate styling */
+    font-family: GTUltraR;
+    font-size: 3.17em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#393731;
+    position: absolute;
+    margin-top: 7.73cm;
+    margin-left: 1.75cm;
+}
+
+.charlttr3 { /* One of the Characters' display text vowels, first letter A - separate styling */
+    font-family: GTUltraR;
+    font-size: 3.17em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#393731;
+    position: absolute;
+    margin-top: 10.33cm;
+    margin-left: 1.75cm;
+}
+
+.charctnt {
+    margin-left: 4cm;
+    margin-right: 5cm;
+}
+
+.charlist1, .charlist2 {
+    font-family: LinoDPro;
+    font-size: 4.05mm;
+    color: #FFF8DF;
+    list-style-type: none;
+    line-height: 12.5mm;
+    float: left;
+    width: 45.05%;
+}
+
+.charlist1 {
+    margin-right: 9.7mm;
+}
+
+.charb {
+    font-size: 6.4mm;
+}
+
+.rvwcontainer { /* Container that has the Reviews contents */
+    margin-top: 15cm;
+    margin-bottom: 4cm;
+}
+
+.rvwtitle {
+    font-family: GTSectra;
+    font-size: 3.6em;
+    color: #FFF8DF;
+    letter-spacing: 12px;
+    text-align: right;
+    margin-right: 5cm;
+}
+
+.rvwside { /* CSS elements for the Review display text on the side */
+    font-family: GTUltraR;
+    font-size: 22mm;
+    letter-spacing: 1.28mm;
+    -webkit-text-stroke-width: 2.7px;
+    -webkit-text-stroke-color:#393731;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    margin-top: mm;
+    margin-left: 36.435cm;
+}
+
+.rvwctnt {
+    font-family: LinoDPro;
+    font-size: 5.5mm;
+    color: #FFF8DF;
+    list-style-type: none;
+    line-height: 10mm;
+    text-align: center;
+    margin-left: 5cm;
+    margin-right: 5cm;
+}
+
+.rvwmargin {
+    margin-bottom: mm;
+}
+.rvwb {
+    font-size: 6.2mm;
+}
+
+.navbar { /* Navigation Bar styling */
+    overflow: hidden;
+    background-color: black;
+    font-family: GTUltraR;
+    position: fixed;
+    top: 0; 
+    width: 57.1%; 
+    margin-left: 8.62cm; 
+    border-bottom: 1px solid;
+    border-color: #D6CFB6;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+    margin-left: 3mm;
+}
+
+.navbar a:hover { /* Navigation Bar styling when cursor is hovering over a link */
+    color: #E1DAC1;
+    text-decoration: none;
+}
+
+#home { /* Text for Home Page link */
+    font-size: 1px;
+}
+
+#plot, #keyinfo, #cast, #cteam, #chtrs, #rvw { /* Text that's camouflaged to the background color, used to space for */
+    font-size: 13mm;                           /* bottom of navigation bar and top of contents */
+}
+
+.ytbtn { /* Top left button, for Youtube - CSS styling */
+    overflow: hidden;
+    border: 1px solid #E1DAC1;
+    font-family: GTUltraR;
+    font-size: 4mm;
+    color: #F2F2F2;
+    text-decoration: none;
+    padding: 9px 11px;
+    position: absolute;
+    top: 3mm;
+    left: 2mm;
+}
+
+.webbtn { /* Top right button, for Website - CSS styling */
+    overflow: hidden;
+    border: 1px solid #E1DAC1;
+    font-family: GTUltraR;
+    font-size: 4mm;
+    color: #F2F2F2;
+    text-decoration: none;
+    padding: 9px 13.6px;
+    position: absolute;
+    top: 3mm;
+    left: 37.49cm;
+}  

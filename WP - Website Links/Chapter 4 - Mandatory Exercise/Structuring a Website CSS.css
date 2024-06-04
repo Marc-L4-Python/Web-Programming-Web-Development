@@ -1,0 +1,287 @@
+html, body {
+    margin: 0;
+    font-family: Touvlo;
+}
+
+@font-face { /* Touvlo; A sans-serif font imported */
+    font-family: Touvlo;
+    src: url(touvlo-extralight.otf);
+}
+
+header { /* Setting up the size and background color of the header */
+    background-color: #100D0D;
+    padding: 0mm 16.5mm;
+    height: 125px;
+    color: white;
+    clear: both;
+}
+
+.monospace { /* Website name at the top left; CSS styling */
+    float: left;
+    padding: 8.1mm 0;
+    font-size: 25px;
+    letter-spacing: 1.75px;
+    line-height: 7.5mm;
+}
+
+nav { /* The navigation bar, along with 2 other pseudo classes, and hover effect */
+    text-align: center;
+    transform: translate(-6.4mm, 0);
+}
+
+nav a {
+    font-size: 17.15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 12.8mm 0mm;
+    margin: 0 5.3mm;
+}
+
+nav a::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    left: 0;
+    margin: 6.7mm 0;
+    transform: scale(0);
+    transition: transform 0.8s;
+    transform-origin: left;
+}
+
+nav a:hover::after { /* Hover effect making the links underlined when hovered on */
+    transform-origin: left;
+    transform: scale(1);
+}
+
+.logocontainer { /* Parent container which contains the website logo; found at the top-right */
+    float: right;
+    position: inline-block;
+    margin-top: -5.62em;
+}
+
+.logobox { /* Simple logo design w/ website name initials for the text inside */
+    width: 10mm;
+    height: 14.2mm;
+    border: 2px solid white;
+}
+
+.logotext {
+    margin-top: -5mm;
+    margin-left: 2.68mm;
+    font-size: 3.1mm;
+}
+
+.ftrcontainer { /* Footer CSS to set it (fixed, in a way) at the bottom of the screen/website */
+    width: 100%;
+    height: 6mm;
+    position: absolute;
+    bottom: 0;
+    background-color: #100D0D;
+    color: white;
+}
+
+footer { /* Footer content CSS for size, space, and alignment */
+    padding: 0.3mm 0;
+    font-size: 3.7mm;
+    text-align: center;
+}
+
+.maincontent { /* Main Parent Container for the website's main contents */
+    margin: 10.5mm 16.5mm;
+    height: 32em;
+    clear: both;
+}
+
+.lcontent { /* Parent Container for the content on the LEFT side of the website */
+    float: left;
+    width: 60%;
+    height: 32em;
+}
+
+.webtitle { /* CSS for the website's title, slogan, and two (2) lines (used as a design) */
+    font-size: 83px;
+    letter-spacing: 1.7mm;
+    margin-left: -1.75mm;
+}
+
+.webslogan {
+    font-size: 4.7mm;
+    letter-spacing: 0.32mm;
+    line-height: 7.7mm;
+    margin-top: 5mm;
+    margin-left: 0.15mm;
+}
+
+.webtitleline1 {
+    width: 17em;
+    height: 2px;
+    margin-top: -29mm;
+    margin-left: 0.5mm;
+    position: absolute;
+    background-color: black;
+}
+
+.webtitleline2 {
+    width: 18.02em;
+    height: 2px;
+    margin-top: -1.3mm;
+    margin-left: 18.275em;
+    position: absolute;
+    background-color: black;
+}
+
+.lctntimages { /* Container for the three (3) images at the bottom-left of the website's content */
+    margin: 11.65em 0;
+    width: 60%;
+    height: 8.2em;
+}
+
+.leftimg1container {
+    position: relative;
+    display: inline-block;
+    width: 8.2em;
+    height: 8.2em;
+}
+
+.leftimg1:hover { /* First left image hover effect */
+    transform: translate(0, -1em);
+}
+
+.leftimg1line { /* First left image underline and its hover effect - underline appears when image is hovered on */
+    background-color: #100D0D;
+    width: 0em;
+    height: 2px;
+    margin-top: -1.8mm;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.leftimg1container:hover .leftimg1line {
+    opacity: 70%;
+    width: 8.2em;
+}
+
+.leftimg1 { /* First Left Image */
+    width: 8.2em;
+    height: 8.2em;
+    flex: 100%;
+    transition: 0.8s;
+}
+
+.leftimg2container {
+    margin: -8.5em 9em;;
+    width: 8.2em;
+    height: 8.2em;
+}
+
+.leftimg2:hover { /* Second left image hover effect */
+    transform: translate(0, -1em);
+}
+
+.leftimg2line { /* Second left image underline and its hover effect - underline appears when image is hovered on */
+    background-color: #100D0D;
+    width: 0em;
+    height: 2px;
+    margin-top: -1.8mm;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.leftimg2container:hover .leftimg2line { 
+    opacity: 70%;
+    width: 8.2em;
+}
+
+.leftimg2 { /* Second Left Image */
+    width: 8.2em;
+    height: 8.2em;
+    flex: 100%;
+    transition: 0.8s;
+}
+
+.leftimg3container {
+    margin: 0.3em 18em;
+    width: 8.2em;
+    height: 8.2em;
+}
+
+.leftimg3:hover { /* Third left image hover effect */
+    transform: translate(0, -1em);
+}
+
+.leftimg3line { /* Third left image underline and its hover effect - underline appears when image is hovered on */
+    background-color: #100D0D;
+    width: 0em;
+    height: 2px;
+    margin-top: -1.8mm;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.leftimg3container:hover .leftimg3line { 
+    opacity: 70%;
+    width: 8.2em;
+}
+
+.leftimg3 { /* Third Left Image */
+    width: 8.2em;
+    height: 8.2em;
+    flex: 100%;
+    transition: 0.8s;
+}
+
+.rcontent { /* Parent Container for the content on the RIGHT side of the website */
+    float: right;
+    width: 40%;
+    height: 32em;
+}
+
+.rctntimages { /* Another container for the three (3) images at the right side of the web */
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+
+.rightimg1container { /* First Right Image Container and First Image */
+    position: inline-block;
+    float: right;
+    margin-right: 12.4em;
+    width: 11.6em;
+    height: 100%;
+}
+
+.rightimg1 {
+    width: 11.6em;
+    height: 100%;
+    flex: 100%;
+}
+
+.rightimg2container { /* Second Right Image Container and Second Image */
+    float: right;
+    margin: -32em 0 0 0;
+    width: 11.6em;
+    height: 15.6em;
+}
+
+.rightimg2 {
+    width: 11.6em;
+    height: 15.6em;
+    flex: 100%;
+}
+
+.rightimg3container { /* Third Right Image Container and Third Image */
+    float: right;
+    margin: -15.6em 0 0 0;
+    width: 11.6em;
+    height: 15.6em;
+}
+
+.rightimg3 {
+    width: 11.6em;
+    height: 15.6em;
+    flex: 100%;
+}
